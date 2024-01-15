@@ -1,0 +1,131 @@
+/* styles.css */
+
+
+#canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 200px);
+    height: 100%;
+}
+
+.sidebar {
+    width: 300px;
+    min-width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.sidebar h4 {
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.sidebar h3 {
+    color: white;
+    flex-shrink: 0;
+}
+
+.sidebar .btn {
+    color: #fff;
+}
+
+.main-content {
+    margin-left: 0px;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.credits {
+    backdrop-filter: blur(10px);
+    position: fixed;
+    text-align: right;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.volume-ratio-display {
+    color: #000;
+    /* White text color for contrast */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    /* Larger font size for prominence */
+    font-weight: bold;
+    background-color: #ffd700;
+    /* Banana yellow background color */
+    padding: 10px 20px;
+    /* Padding for better visibility */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: color 1s, background-color 0.3s;
+    /* Smooth color transition on hover */
+}
+
+.volume-ratio-display:hover {
+    /* Adjusted color scheme to maintain the banana theme */
+    color: #ffd700;
+    /* Change text color to banana yellow on hover for contrast */
+    background-color: #8B4513;
+    /* Change background color to brown on hover */
+}
+
+#bananaFact {
+    margin: 20px auto;
+    padding: 15px;
+    width: 80%;
+    /* Adjust as per your layout */
+    max-width: 600px;
+    /* Ensures readability on wide screens */
+    background-color: #ffecb3;
+    /* Soft yellow background */
+    border: 2px solid #ffd700;
+    /* Golden border */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    /* Larger text for easy reading */
+    color: #505050;
+    /* Dark gray text for contrast */
+    line-height: 1.6;
+    /* Improve readability */
+}
+
+@keyframes pulse {
+    0% {
+        background: lightblue;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.pulse-on-load {
+    animation: pulse 2s;
+}
