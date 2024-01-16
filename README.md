@@ -5,7 +5,7 @@ Try it out: [3D Banana for Scale](https://andrewsink.github.io/3D-Banana-for-Sca
 ![3DBFS2](https://github.com/AndrewSink/3D-Banana-for-Scale/assets/46334898/1075a10d-b3fa-442c-9290-a1d976d22379)
 
 ## Introduction
-Need a banana for scale in your 3D world? </br>
+Need a banana for scale to help you visualize the size of a 3D model? </br>
 '3D Banana for Scale' has got you covered! It's the perfect tool to measure your 3D models against a 3D scan of a real banana!</br>
 
 ## Usage
