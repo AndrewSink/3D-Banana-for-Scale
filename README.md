@@ -5,13 +5,13 @@ Try it out: [3D Banana for Scale](https://andrewsink.github.io/3D-Banana-for-Sca
 ![3DBFS2](https://github.com/AndrewSink/3D-Banana-for-Scale/assets/46334898/1075a10d-b3fa-442c-9290-a1d976d22379)
 
 ## Introduction
-Need a banana for scale to help you visualize the size of a 3D model? </br>
-'3D Banana for Scale' has got you covered! It's the perfect tool to measure your 3D models against a 3D scan of a real banana!</br>
+Need a 3D banana for scale to help you visualize the size of a 3D model? </br>
+Measure your 3D models against a 3D scan of a real banana!</br>
 
 ## Usage
-Click the 'Upload STL' button to select and upload a .STL file.</br>
-The uploaded model will be displayed alongside the 3D banana.</br>
-The volume ratio is automatically calculated, and a fun banana fact is provided!</br>
+1. Click the 'Upload STL' button to select and upload a .STL file.</br>
+2. The uploaded model will be displayed alongside the 3D banana.</br>
+3. The volume ratio is automatically calculated, and a fun banana fact is provided!</br>
 
 ## Contributing
 Contributions are welcome!
