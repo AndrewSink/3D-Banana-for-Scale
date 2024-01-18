@@ -2,7 +2,7 @@
 
 Try it out: [3D Banana for Scale](https://andrewsink.github.io/3D-Banana-for-Scale/)
 
-![3DBFS2](https://github.com/AndrewSink/3D-Banana-for-Scale/assets/46334898/1075a10d-b3fa-442c-9290-a1d976d22379)
+![3D Banana for Scale](https://github.com/AndrewSink/3D-Banana-for-Scale/assets/46334898/01ec384f-f4bd-40a7-84e7-abd9ae90a9be)
 
 ## Introduction
 Need a 3D banana for scale to help you visualize the size of a 3D model? </br>
