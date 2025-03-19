@@ -91,6 +91,8 @@ controls.mouseButtons = {
     RIGHT: THREE.MOUSE.ROTATE
 }
 
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 // Initialize TransformControls
 let transformControls;
 
@@ -261,21 +263,27 @@ function onMouseMove(event) {
 }
 
 function onMouseDown(event) {
+    // Only process left click events (event.button === 0)
+    if (event.button !== 0) return;
+
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     mouse.y = - (event.clientY / window.innerHeight) * 2 + 1;
     raycaster.setFromCamera(mouse, camera);
 
     const intersects = raycaster.intersectObjects(scene.children);
-    if (intersects.length > 0 && intersects[0].object.name === 'userMesh' || intersects.length > 0 && intersects[0].object.name === 'bananaMesh') {
+    if (
+        intersects.length > 0 &&
+        (intersects[0].object.name === 'userMesh' || intersects[0].object.name === 'bananaMesh')
+    ) {
         selectedObject = intersects[0].object;
-        controls.enabled = false; // Disable camera controls
+        controls.enabled = false; // Disable camera controls when interacting with the model
     }
 }
 
-
 function onMouseUp(event) {
+    if (event.button !== 0) return;
     selectedObject = null;
-    controls.enabled = true; // Enable camera controls
+    controls.enabled = true; // Re-enable camera controls
 }
 
 const bananaFacts = [
