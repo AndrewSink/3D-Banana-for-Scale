@@ -85,6 +85,11 @@ loader.load('Banana_Scan_2.stl', function (geometry) {
 console.log('Banana for Scale')
 const controls = new OrbitControls(camera, renderer.domElement);
 
+controls.mouseButtons = {
+    LEFT: THREE.MOUSE.ROTATE,
+    MIDDLE: THREE.MOUSE.PAN,
+    RIGHT: THREE.MOUSE.ROTATE
+}
 
 // Initialize TransformControls
 let transformControls;
